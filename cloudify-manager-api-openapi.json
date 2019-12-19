@@ -1,0 +1,425 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Cloudify Manager API",
+        "description": "Cloud Orchestration & Automation Made Easy",
+        "termsOfService": "http:\/\/getcloudify.org\/terms_of_use.html"
+    },
+    "servers": [
+        "https\/http:\/\/localhost:8100"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": {
+            "Node": {
+                "type": "object",
+                "properties": {
+                    "operations": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "relationships": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deploy_number_of_instances": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "plugins_to_install": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type_hierarchy": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "blueprint_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "number_of_instances": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "properties": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "plugins": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "host_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "NodeInstance": {
+                "type": "object",
+                "properties": {
+                    "relationships": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "version": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "runtime_properties": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "state": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "node_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "host_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Status": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "services": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Execution": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "blueprint_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "workflow_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Version": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "commit": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "version": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "build": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EvaluateFunctionsRequest": {
+                "type": "object",
+                "properties": {
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "payload": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "context": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Workflow": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DeploymentOutputs": {
+                "type": "object",
+                "properties": {
+                    "outputs": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ProviderContextPostStatus": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DeploymentModificationRequest": {
+                "type": "object",
+                "properties": {
+                    "nodes": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "stage": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ModifyExecutionRequest": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DeploymentModification": {
+                "type": "object",
+                "properties": {
+                    "modified_nodes": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "node_instances": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "DeploymentRequest": {
+                "type": "object",
+                "properties": {
+                    "blueprint_id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EvaluatedFunctions": {
+                "type": "object",
+                "properties": {
+                    "deployment_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "payload": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ProviderContext": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "context": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PostProviderContextRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "context": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Deployment": {
+                "type": "object",
+                "properties": {
+                    "inputs": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "blueprint_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "policy_types": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "outputs": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "workflows": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "policy_triggers": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ExecutionRequest": {
+                "type": "object",
+                "properties": {
+                    "allow_custom_parameters": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "workflow_id": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "force": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BlueprintState": {
+                "type": "object",
+                "properties": {
+                    "plan": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "id": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "BlueprintValidationStatus": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "blueprintId": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
