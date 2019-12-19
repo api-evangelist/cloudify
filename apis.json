@@ -1,0 +1,84 @@
+{
+    "name": "Cloudify",
+    "description": "Cloudify is an open source application and network orchestration framework based on TOSCA, that supports hybrid cloud deployments.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11767-cloudify.jpg",
+    "tags": [
+        "api provider",
+        "api service provider",
+        "cloud",
+        "compute",
+        "containers",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/cloudify\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Cloudify Manager API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/11767-cloudify.jpg",
+            "humanURL": "http:\/\/getcloudify.org\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/cloudify-manager-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "http:\/\/getcloudify.org\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/getcloudify.org\/atom.xml"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/cloudify-co"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/getcloudify.org\/guide\/3.0\/rest-api\/index.html"
+        },
+        {
+            "type": "Email",
+            "url": "hello@getcloudify.org"
+        },
+        {
+            "type": "Email",
+            "url": "hello@cloudify.co"
+        },
+        {
+            "type": "FAQ",
+            "url": "http:\/\/getcloudify.org\/FAQ_cloud_devops_automation.html"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/CloudifySource"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/getcloudify.org\/privacy_policy.html"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "http:\/\/getcloudify.org\/terms_of_use.html"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/CloudifySource"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/getcloudify.org\/"
+        }
+    ]
+}
