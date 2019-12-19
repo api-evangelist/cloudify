@@ -1,0 +1,12 @@
+{
+    "id": "14acf8a7c236b15040617434cd0734d2",
+    "name": "Cloudify Manager API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": []
+}
